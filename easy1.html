@@ -3,7 +3,8 @@
 function checkAns() {
    if (document.getElementById("FirstName").value == "נמרוד")
    {
-     document.getElementById("RightAns").style.visibility = "visible";
+      alert("A");
+     document.getElementById("RightAns").style.display = "none";
    }
 }
 </script>
@@ -19,7 +20,7 @@ function checkAns() {
   <br>
    <h1 onclick="checkAns();">בדוק תשובה</h1> 
  <BR><BR>
-   <p id="RightAns" visibility="hidden">
+   <div id="RightAns" display="block">
 !נכון
-   </p>
+   </div>
 </H1></CENTER>
