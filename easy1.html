@@ -1,10 +1,25 @@
 <BR><BR><BR>
 <script>
+   var tries=0;//global variable  
+   
+   input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 function checkAns() {
    if (document.getElementById("FirstName").value == "נמרוד")
    {
-      alert("A");
+    
      document.getElementById("RightAns").style.display = "block";
+   }
+   else
+   {
+      document.getElementById("WrongAns").style.display = "block";
    }
 }
 </script>
@@ -18,10 +33,24 @@ function checkAns() {
 <input type="text" id="FirstName">
   <br>
   <br>
-   <h1 onclick="checkAns();">בדוק תשובה</h1> 
+   <h1 onclick="checkAns();">לחץ כאן לבדיקת התשובה</h1> 
  <BR><BR>
    <div id="RightAns" style="display:none;">
 !נכון
+   <BR>
+      המשך בנסיעה לשמורת פורה
+      <BR>
+         <a href="https://www.waze.com/ul?place=ChIJtau_BCGMAhURw64VxVVw4oo&ll=31.49553730%2C34.77726290&navigate=yes">WAZE</a>
+   
+         <br><BR>
+         סוף השלב...
+         <BR>
+         בשמורת פורה מחכה קפה וגם ה
+    <BR>
+       הבא QR
+            </div>
+               <div id="WrongAns" style="display:none;">
+!טעית שלוש פעמים
    <BR>
       המשך בנסיעה לשמורת פורה
       <BR>
