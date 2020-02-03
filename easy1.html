@@ -19,7 +19,14 @@ function checkAns() {
    }
    else
    {
-      document.getElementById("WrongAns").style.display = "block";
+      if (tries==2)
+      {
+         document.getElementById("WrongAns").style.display = "block";
+      }
+      else
+      {
+         tries = tries + 1;
+      }
    }
 }
 </script>
