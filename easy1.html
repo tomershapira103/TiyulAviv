@@ -1,13 +1,25 @@
 <BR><BR><BR>
+<script>
+function checkAns() {
+   if (document.getElementById("FirstName").value == "נמרוד")
+   {
+     document.getElementById("RightAns").style.visibility = "visible";
+   }
+}
+</script>
 <H1><CENTER>
-זה רק ניסיון, כולם מגיעים לכאן
-<BR><BR>
+כאן יהיה כתב חידה או רצף חידות, לדוגמה
+  <BR><BR>
 מי מנהל בית הספר?
-<BR>
-שם פרטי()
-<BR><BR>
-<input type="text" name="FirstName">
+<BR>(
+שם פרטי
+)<BR><BR>
+<input type="text" id="FirstName">
   <br>
   <br>
-   <button type="button" onclick="checkAns();">בדוק תשובה</button> 
+   <h1 onclick="checkAns();">בדוק תשובה</h1> 
+ <BR><BR>
+   <p id="RightAns" visibility="hidden">
+!נכון
+   </p>
 </H1></CENTER>
