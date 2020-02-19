@@ -34,8 +34,11 @@ a.nextpage:hover, a.nextpage:active {
 }
 */
  div.nextpage{
-  background-color: #f44336;
-  color: blue;
+    border-radius: 25px;
+    align: center;
+  background-color: white;
+  color: black;
+    font-size: large;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
