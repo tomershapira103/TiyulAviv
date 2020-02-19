@@ -19,7 +19,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/*
 a.nextpage:link, a.nextpage:visited {
   background-color: #f44336;
   color: white;
@@ -32,4 +32,12 @@ a.nextpage:link, a.nextpage:visited {
 a.nextpage:hover, a.nextpage:active {
   background-color: red;
 }
-
+*/
+ div.nextpage{
+  background-color: #f44336;
+  color: blue;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
