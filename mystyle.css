@@ -19,7 +19,7 @@ body.landingpage {
 
  div.nextpage{
       position: fixed;
-  bottom: 0;
+  bottom: 10%;
   left:15%;
   right:15%;
     border-radius: 25px;
