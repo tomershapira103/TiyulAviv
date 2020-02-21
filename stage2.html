@@ -2,31 +2,31 @@
 <html>
       <head>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
+<script src="myScript.js"></script>
       </head>
       <body>
-<H1><BR><BR>
-אם אתם נוסעים על כביש 6 בכיוון דרום, אתם בדרך הנכונה
-<BR><BR>      
+<H1><BR>
+...ממשיכים רגוע
+      <BR><BR>
+?באיזו שנה הוקם המושב
+            <BR><BR>
+                  <input type="text" id="AnsValue" value="" onfocus="this.value=''">
 </H1>
-      <H2>
-      בזמן שאתם נוסעים להנאתכם, אנו ממליצים להנעים את זמנכם באמצעות משחק "ארץ עיר" המותאם במיוחד למושב סלעית.
-            <BR>
-:בחרו אות, וקדימה.. ענו על השאלות הבאות
-            <BR>
-א. שם משפחה במושב שמתחיל באות שבחרתם
-                  <BR>
-ב. שם של ילד/ה בשכבת הגיל של מישהו מהיושבים ברכב, המתגורר במושב
-                        <BR>
-ג. מקצוע של מישהו מהמושב
-                              <BR>
-ד. עיר מגורים בעבר של משפחה המתגוררת במושב
-                                    <BR>
-      </H2>
+      <BR><BR>
+            
+<H1><div id="WrongAns" style="display:none;">טעית, נסה שוב</div></H1>
+<H1><div id="WrongAnsLastChance" style="display:none;">טעית 3 פעמים, התשובה היא 1979</div></H1>
+<H1><div id="RightAns" style="display:none;">!כל הכבוד</div></H1>
 
+            
+<center><div class="nextpage" onclick="checkAns('1979');" id="CheckAns">
+לחץ כאן לבדיקת התשובה
+      </div></center>
+                  
     <a href="stage3.html">
-          <center><div class="nextpage" id="orangediv">
-אם סיימת, לחץ כאן להמשך
-                </div></center>
+          <center><div class="nextpage" style="display:none;" id="NextPage">
+לחץ כאן למעבר לשלב הבא
+</div></center>
                 </a>
         </body>
         </html>
