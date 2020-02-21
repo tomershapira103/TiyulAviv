@@ -1,7 +1,6 @@
 html {
    height: 100%;
-   dir: rtl;
-   lang: he;
+
 }
 
 h1 {
@@ -10,6 +9,8 @@ h1 {
      font-size: 60px;
    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
       margin: 80px;
+      dir: rtl;
+   lang: he;
 
 }
 
@@ -21,6 +22,8 @@ h2 {
    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
    line-height: 1.8;
    margin: 80px;
+      dir: rtl;
+   lang: he;
 }
 
 body {
