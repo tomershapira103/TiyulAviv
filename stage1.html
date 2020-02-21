@@ -5,8 +5,8 @@
             <script>
    var tries=0;//global variable  
 
-function checkAns() {
-   if (document.getElementById("ManagerName").value == "נמרוד")
+function checkAns(ans) {
+   if (document.getElementById("ManagerName").value == ans)
    {
     
      document.getElementById("RightAns").style.display = "block";
@@ -54,7 +54,7 @@ function checkAns() {
 <H1><div id="RightAns" style="display:none;">!כל הכבוד</div></H1>
 
             
-<center><div class="nextpage" onclick="checkAns();" id="CheckAns">
+<center><div class="nextpage" onclick="checkAns("נמרוד");" id="CheckAns">
 לחץ כאן לבדיקת התשובה
       </div></center>
                   
