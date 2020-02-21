@@ -2,27 +2,64 @@
 <html>
       <head>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
+            <script>
+   var tries=0;//global variable  
+
+function checkAns() {
+   if (document.getElementById("ManagerName").value == "נמרוד")
+   {
+    
+     document.getElementById("RightAns").style.display = "block";
+     document.getElementById("WrongAns").style.display = "none";
+     document.getElementById("WrongAnsLastChance").style.display = "none";
+     document.getElementById("CheckAns").style.display = "none";
+     document.getElementById("NextPage").style.display = "block";
+
+   }
+   else
+   {
+      if (tries==2)
+      {
+         document.getElementById("RightAns").style.display = "none";
+         document.getElementById("WrongAns").style.display = "none";
+         document.getElementById("WrongAnsLastChance").style.display = "block";
+         document.getElementById("CheckAns").style.display = "none";
+         document.getElementById("NextPage").style.display = "block";
+      }
+      else
+      {
+         document.getElementById("RightAns").style.display = "none";
+         document.getElementById("WrongAns").style.display = "block";
+         document.getElementById("WrongAnsLastChance").style.display = "none";
+         document.getElementById("CheckAns").style.display = "block";
+         document.getElementById("NextPage").style.display = "none";
+         tries = tries + 1;
+      }
+   }
+}
+</script>
       </head>
       <body>
-<H1><BR><BR><BR>
-X החל בנסיעה על כביש
-      <BR>
-      Y לכיוון
-      <BR><BR></H1>
-            <H2>
-              הוא כמות העובדים בשכר במושב X
-      <BR>
-            חלקי 1.5
+<H1><BR>
+...נתחיל בשאלות קלות
+      <BR><BR>
+            מי מנהל בית הספר?
             <BR><BR>
-            הוא הכיוון של האמפי בסלעית  Y
-<BR>
-      ביחס לאזור בית הספר
-      </H2>
-      
+                  <input type="text" id="ManagerName">
+</H1>
+      <BR><BR>
+            
+<H1><div id="WrongAns" style="display:none;">טעית, נסה שוב</div></H1>
+<H1><div id="WrongAnsLastChance" style="display:none;">טעית 3 פעמים, התשובה היא נמרוד</div></H1>
+<H1><div id="RightAns" style="display:none;">!כל הכבוד</div></H1>
 
-
+            
+<center><div class="nextpage" onclick="checkAns();" id="CheckAns">
+לחץ כאן לבדיקת התשובה
+      </div></center>
+                  
     <a href="stage2.html">
-          <center><div class="nextpage" id="orangediv">
+          <center><div class="nextpage" style="display:none;" id="NextPage">
 לחץ כאן לאחר הגעה לכביש
 </div></center>
                 </a>
