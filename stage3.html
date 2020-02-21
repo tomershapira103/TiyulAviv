@@ -2,15 +2,28 @@
 <html>
       <head>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
+<script src="myScript.js"></script>
       </head>
       <body>
-<H1><BR><BR><BR>
-    מצוין, מקווים שנהניתם מהמשחק. מוזמנים להמשיך לתחנת דלק "דור אלון" הנמצאת על כביש 6, שם תקבלו את המשימה הבאה
+<H1><BR>
+איזה תושב סלעית זכה בשנת 2019 באליפות אירופה לנוער באקרובטיקה?
+      <BR><BR>
+                  <input type="text" id="AnsValue" value="שם פרטי" onfocus="this.value=''">
 </H1>
+      <BR><BR>
+            
+<H1><div id="WrongAns" style="display:none;">טעית, נסה שוב</div></H1>
+<H1><div id="WrongAnsLastChance" style="display:none;">טעית 3 פעמים, התשובה היא יונתן פרידמן</div></H1>
+<H1><div id="RightAns" style="display:none;">!נכון<BR></div></H1>
 
+            
+<center><div class="nextpage" onclick="checkAns('יונתן');" id="CheckAns">
+לחץ כאן לבדיקת התשובה
+      </div></center>
+                  
     <a href="stage4.html">
-          <center><div class="nextpage" id="orangediv">
-לחץ כאן אם הגעת לתחנת הדלק
+          <center><div class="nextpage" style="display:none;" id="NextPage">
+לחץ כאן למעבר לשלב הבא
 </div></center>
                 </a>
         </body>
