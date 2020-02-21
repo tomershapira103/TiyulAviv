@@ -1,7 +1,7 @@
    var tries=0;//global variable  
 
 function checkAns(ans) {
-   if (document.getElementById("ManagerName").value == ans)
+   if (document.getElementById("AnsValue").value == ans)
    {
     
      document.getElementById("RightAns").style.display = "block";
