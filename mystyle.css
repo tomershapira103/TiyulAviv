@@ -55,6 +55,11 @@ body.landingpage {
     background-color: orange;
 
 }
+#CheckAns
+{
+  background-color: #00FFFF; 
+}
+
 
 input[type=text] {
   width: 50%;
