@@ -2,17 +2,28 @@
 <html>
       <head>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
+<script src="myScript.js"></script>
       </head>
       <body>
-<H2><BR><BR><BR>
-"עצרו בקצה החניון של תחנת הדלק. המתינה למשפחה הבאה שמגיעה מהמושב. הצטלמו ביחד, כאשר שתי המשפחות עומדות באופן מעורבב בסדר יורד מהגבוה ביותר לנמוך ביותר. 
-אם אתם לא מכירים את המשפחה שעמה הצטלמתם, מוזמנים לנצל את הזמן להתרעננות וקפה (אבל לא ארוך מדי.. מחכים לכם בשמורת פורה)
+<H1><BR>
+מי הוא תושב סלעית אשר ייצג את ישראל באולימפיאדה (בוגרים)?
+      <BR><BR>
+                  <input type="text" id="AnsValue" value="שם פרטי" onfocus="this.value=''">
+</H1>
+      <BR><BR>
+            
+<H1><div id="WrongAns" style="display:none;">טעית, נסה שוב</div></H1>
+<H1><div id="WrongAnsLastChance" style="display:none;">טעית 3 פעמים, טל שטריקר, אשר ייצג את ישראל באולימפיאדת סידני 2000, בשלושה מקצים שונים של שחייה</div></H1>
+<H1><div id="RightAns" style="display:none;">!נכון<BR></div></H1>
 
-</H2>
-
+            
+<center><div class="nextpage" onclick="checkAns('טל');" id="CheckAns">
+לחץ כאן לבדיקת התשובה
+      </div></center>
+                  
     <a href="stage5.html">
-          <center><div class="nextpage" id="orangediv">
-לחץ כאן אם הגעת לתחנת הדלק
+          <center><div class="nextpage" style="display:none;" id="NextPage">
+לחץ כאן למעבר לשלב הבא
 </div></center>
                 </a>
         </body>
